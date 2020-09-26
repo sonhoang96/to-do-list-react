@@ -1,0 +1,155 @@
+$bgColor : #242b4b;
+$color: azure;
+$pencil: #5c6bc0;
+$del: #cc4c36;
+$margin: 10px 0;
+$padding: 7px 3px;
+$shadow: 0px 0px 5px #5c5d5c;
+div.item-todo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $bgColor;
+    margin: $margin;
+    cursor: pointer;
+    animation: newItem 1s forwards;
+    div.item-data{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        padding: $padding;
+        position: relative;
+        overflow: hidden;
+        p{
+            font-size: 2em;
+            word-break: break-all;
+            color: $color
+        }
+        p::first-letter{
+            text-transform: uppercase;
+        }
+        input.edit-form, input.edit-form-hidden{
+            width: 35%;
+            position: absolute;
+            top: 50%;
+            right: 5px;
+            padding: 7px;
+            transform: translate(-5px,-50%);
+            border: 0;
+            outline: 0;
+            border-radius: 5px;
+            font-size: 1em;
+            color: $pencil;
+            transition: 0.5s;
+        }
+        input.edit-form-hidden{
+            right: -50%;
+        }
+    }
+    div.tools{
+        font-size: 0.7em;
+        display: flex;
+        i:nth-child(1){
+            color: $pencil;
+            transition: 0.3s;
+        }
+        i:nth-child(1):hover{
+            color: $color
+        }
+        i:nth-child(2), i.delete-icon{
+            color: $del;
+            transition: 0.3s;
+        }
+        i:nth-child(2):hover, i.delete-icon:hover{
+            color: #d40f00;
+        }
+        i.fas.fa-check-double:hover{
+            color: azure !important
+        }
+    }
+    i{
+        margin: 0 5px;
+        font-size: 2.5em;
+        margin: 7px;
+        color: $color
+    }
+}
+div.addForm{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: 10px 0 2em 0;
+    input.form-input{
+        width: 80%;
+        height: auto;
+        font-size: 1.5em;
+        padding: 10px 1em;
+        font-family: inherit;
+        border: 3px solid $bgColor;
+        border-radius: 20px;
+        outline: 0;
+        box-shadow: $shadow;
+        background: $color;
+    }
+    button.form-submit{
+        font-size: 1.5em;
+        margin-left: 0.5em;
+        padding: 0 1em; 
+        cursor: pointer;
+        border: 2px solid $bgColor;
+        border-radius: 15px;
+        outline: 0;
+        background: $bgColor;
+        color: $color;
+        box-shadow: $shadow;
+        text-transform: uppercase;
+        transition: 0.3s;
+    }
+    button.form-submit:hover{
+        background: $color;
+        color: $bgColor
+    }
+}
+div.toolsBar{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin: 1em 0;
+    padding: $padding;
+    button.paginateButton{
+        width: 27px;
+        height: 27px;
+        margin: 0 3px;
+        border: 0;
+        outline: 0;
+        background: transparent;
+        color: $bgColor;
+        font-weight: 600;
+        font-size: 1.1em;
+        font-family: inherit;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    button.paginateButton:hover, button.paginateButton.active {
+        color: $color;
+        background: $bgColor;
+        border-radius: 50%;
+    }
+    div.timer{
+        margin: 0 7px;
+        font-weight: 600;
+        font-size: 1.2em;
+        color: #5c6bc0
+    }
+}
+// animation
+@keyframes newItem{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

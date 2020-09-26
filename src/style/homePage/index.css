@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Grandstander:wght@100;200;300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+div.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #5c6bc0; }
+  div.app div.homepage {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    height: auto;
+    background-color: azure;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px;
+    font-family: 'Grandstander', cursive; }

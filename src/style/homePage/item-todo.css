@@ -1,0 +1,126 @@
+div.item-todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #242b4b;
+  margin: 10px 0;
+  cursor: pointer;
+  animation: newItem 1s forwards; }
+  div.item-todo div.item-data {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 7px 3px;
+    position: relative;
+    overflow: hidden; }
+    div.item-todo div.item-data p {
+      font-size: 2em;
+      word-break: break-all;
+      color: azure; }
+    div.item-todo div.item-data p::first-letter {
+      text-transform: uppercase; }
+    div.item-todo div.item-data input.edit-form, div.item-todo div.item-data input.edit-form-hidden {
+      width: 35%;
+      position: absolute;
+      top: 50%;
+      right: 5px;
+      padding: 7px;
+      transform: translate(-5px, -50%);
+      border: 0;
+      outline: 0;
+      border-radius: 5px;
+      font-size: 1em;
+      color: #5c6bc0;
+      transition: 0.5s; }
+    div.item-todo div.item-data input.edit-form-hidden {
+      right: -50%; }
+  div.item-todo div.tools {
+    font-size: 0.7em;
+    display: flex; }
+    div.item-todo div.tools i:nth-child(1) {
+      color: #5c6bc0;
+      transition: 0.3s; }
+    div.item-todo div.tools i:nth-child(1):hover {
+      color: azure; }
+    div.item-todo div.tools i:nth-child(2), div.item-todo div.tools i.delete-icon {
+      color: #cc4c36;
+      transition: 0.3s; }
+    div.item-todo div.tools i:nth-child(2):hover, div.item-todo div.tools i.delete-icon:hover {
+      color: #d40f00; }
+    div.item-todo div.tools i.fas.fa-check-double:hover {
+      color: azure !important; }
+  div.item-todo i {
+    margin: 0 5px;
+    font-size: 2.5em;
+    margin: 7px;
+    color: azure; }
+
+div.addForm {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin: 10px 0 2em 0; }
+  div.addForm input.form-input {
+    width: 80%;
+    height: auto;
+    font-size: 1.5em;
+    padding: 10px 1em;
+    font-family: inherit;
+    border: 3px solid #242b4b;
+    border-radius: 20px;
+    outline: 0;
+    box-shadow: 0px 0px 5px #5c5d5c;
+    background: azure; }
+  div.addForm button.form-submit {
+    font-size: 1.5em;
+    margin-left: 0.5em;
+    padding: 0 1em;
+    cursor: pointer;
+    border: 2px solid #242b4b;
+    border-radius: 15px;
+    outline: 0;
+    background: #242b4b;
+    color: azure;
+    box-shadow: 0px 0px 5px #5c5d5c;
+    text-transform: uppercase;
+    transition: 0.3s; }
+  div.addForm button.form-submit:hover {
+    background: azure;
+    color: #242b4b; }
+
+div.toolsBar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin: 1em 0;
+  padding: 7px 3px; }
+  div.toolsBar button.paginateButton {
+    width: 27px;
+    height: 27px;
+    margin: 0 3px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #242b4b;
+    font-weight: 600;
+    font-size: 1.1em;
+    font-family: inherit;
+    cursor: pointer;
+    transition: 0.3s; }
+  div.toolsBar button.paginateButton:hover, div.toolsBar button.paginateButton.active {
+    color: azure;
+    background: #242b4b;
+    border-radius: 50%; }
+  div.toolsBar div.timer {
+    margin: 0 7px;
+    font-weight: 600;
+    font-size: 1.2em;
+    color: #5c6bc0; }
+
+@keyframes newItem {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
