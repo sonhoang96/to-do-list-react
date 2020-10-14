@@ -3,13 +3,13 @@
     {
       "id": 1,
       "todo": "23s",
-      "status": "unfinished",
+      "status": "finished",
       "onUpdate": false
     },
     {
       "id": 2,
-      "todo": "as",
-      "status": "unfinished",
+      "todo": "as2",
+      "status": "finished",
       "onUpdate": false
     },
     {
@@ -20,8 +20,8 @@
     },
     {
       "id": 4,
-      "todo": "1a",
-      "status": "unfinished",
+      "todo": "1a4",
+      "status": "finished",
       "onUpdate": false
     },
     {
@@ -41,6 +41,18 @@
       "status": "unfinished",
       "onUpdate": false,
       "id": 7
+    },
+    {
+      "todo": "zxz",
+      "status": "unfinished",
+      "onUpdate": false,
+      "id": 8
+    },
+    {
+      "todo": "xa",
+      "status": "unfinished",
+      "onUpdate": false,
+      "id": 9
     }
   ]
 }
