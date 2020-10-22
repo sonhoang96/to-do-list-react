@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@100;200;300;400;500;600&display=swap');
+$color: #5c6bc0;
+$azure: azure;
+$gray:  #5c5d5c;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Grandstander', cursive;
+}
+div.frame{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $azure;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px $azure;
+    h1{
+        color: $color;
+        margin: 0.7em 0em 0.2em 0em;
+        text-transform: uppercase;
+    }
+    p.message{
+        font-size: 0.7em;
+        font-weight: 500;
+        letter-spacing: 1px;
+        color: tomato;
+    }
+    i{
+        color: #388E3C;
+        font-size: 2em;
+        transition: 0.3;
+    }
+    div.form{
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        div.name-login, div.password-login{
+            position: relative;
+            width: 100%;
+            height: auto;
+            width: 350px;
+            height: 35px;
+            padding: 5px 10px;
+            margin: 20px;
+            input{
+                position: absolute;
+                width: inherit;
+                height: inherit;
+                top: 0;
+                left: 0;
+                font-size: 1.2em;
+                border: none;
+                outline: none;
+                padding-left: 2.2em;
+                font-weight: 500;
+                background: $azure;
+                border-bottom: 1px solid $color;
+                transition: 0.3s;
+            }
+            i,p{
+                position: absolute;
+                top: 50%;
+                left: 10px;
+                transform: translate(0%,-50%);
+                z-index: 2;
+                color: $color;
+                transition: 0.3s;
+            }
+            i{
+                font-size: 1.2em;
+            }
+            p{
+                font-size: 1em;
+                left: 2.5em;
+                letter-spacing: 3px;
+                transition: 0.3s;
+            }
+            span.message{
+                position: absolute;
+                bottom: -20px;
+                right: 0;
+                font-size: 0.7em;
+                font-weight: 500;
+                letter-spacing: 1px;
+                color: tomato;
+                width: auto;
+            }
+        }
+        div.name-login.focus, div.password-login.focus{
+            input{
+                border-bottom: 2px solid $gray;
+                color: $color
+            }
+            i{
+                color: $gray;
+            }
+            p{
+                top: -5px;
+                left: 2em;
+                color: $gray;
+                font-weight: 600;
+                letter-spacing: 0px;
+            }
+        }
+        i.form-display-pw{
+            position: relative;
+            width: 100%;
+            height: auto;
+            margin-left: 15px;
+            font-size: 1.5em;
+            color: $color;
+            transition: 0.3s;
+        }
+        i.form-display-pw:hover{
+            color: $gray;
+        }
+        i.form-display-pw:after{
+            content: 'password visibility';
+            font-size: 0.7em;
+            position: absolute;
+            top: 10%;
+            left: 7%;
+        }
+        div.tools{
+            position: relative;
+        }
+        button.form-register,button.form-login{
+            width: 20%;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background: 0;
+            border: 0;
+            outline: 0;
+            font-size: 1em;
+            color: $color;
+            cursor: pointer;
+        }
+        button.form-register:hover,button.form-login:hover{
+            color: $gray;
+        }
+        button.form-submit{
+            margin: 1em 0;
+            height: 40px;
+            font-size: 1.2em;
+            border: none;
+            outline: none;
+            border-radius: 20px;
+            cursor: pointer;
+            color: $azure;
+            background: $color;
+            transition: 0.5s;
+        }
+        button.form-submit:hover{
+            background: $gray;
+        }
+    }
+}

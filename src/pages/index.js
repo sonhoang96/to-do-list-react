@@ -1,7 +1,7 @@
 import HomePage from "./HomePage"
-import ListPage from "./ListPage"
+import LoginPage from "./LoginPage"
 
 export {
     HomePage,
-    ListPage
+    LoginPage
 }

@@ -4,8 +4,8 @@ import * as page from "./pages/index"
 const Routes = () => (
     <BrowserRouter>
         <Switch>
-            <Route exact path="/" component={page.HomePage}/>
-            <Route path="/to-do-list" component={page.ListPage}/>
+            <Route exact path="/user/:name" component={page.HomePage}/>
+            <Route path="/user/login" component={page.LoginPage}/>
         </Switch>
     </BrowserRouter>
 )

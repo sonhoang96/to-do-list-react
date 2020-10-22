@@ -26,4 +26,11 @@ export const REMOVE_ITEM_REQUEST = "REMOVE_ITEM_REQUEST"
 export const REMOVE_ITEM_SUCCESS = "REMOVE_ITEM_SUCCESS"
 export const REMOVE_ITEM_FAILURE = "REMOVE_ITEM_FAILURE"
 
-export const URL = `http://localhost:3005/list/`
+export const REGISTER_REQUEST = "REGISTER_REQUEST"
+export const REGISTER_SUCCESS = "REGISTER_SUCCESS"
+export const REGISTER_FAILURE = "REGISTER_FAILURE"
+
+export const LOGIN_REQUEST = "LOGIN_REQUEST"
+export const LOGIN_SUCCESS = "LOGIN_SUCCESS"
+export const LOGIN_FAILURE = "LOGIN_FAILURE"
+export const URL = `http://localhost:3010/`

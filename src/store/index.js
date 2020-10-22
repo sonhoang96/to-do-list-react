@@ -6,6 +6,8 @@ const DEFAULT_STATE = {
     errorMessage: null,
     activePage: 1,
     totalPage: null,
-    updatingItems: []
+    updatingItems: [],
+    message: '',
+    login: false
 }
 export default DEFAULT_STATE;

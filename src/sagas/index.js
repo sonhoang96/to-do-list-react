@@ -5,6 +5,8 @@ import pagination from "./paginateSaga";
 import {updateNewStatus, updateStatusEdit} from "./updateStatusSaga"
 import removeData from "./removeToDoSaga"
 import editData from "./editToDoSaga";
+import registerSaga from "./registerSaga";
+import signInSaga from "./loginSaga";
 function* rootSaga(){
     yield all([
         getListSaga,
@@ -13,7 +15,9 @@ function* rootSaga(){
         addData,
         pagination,
         removeData,
-        editData
+        editData,
+        registerSaga,
+        signInSaga
     ])
 }
 export default rootSaga;
